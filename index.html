@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-
+        <!-- Navigation Bar -->
         <nav class="nav collapsible">
             <a href="/"><img class="nav-image" src="images/ekdev-logo-white.png"
                     alt></a>
@@ -25,11 +25,32 @@
             </svg>
             <ul class="list nav__list collapsible__content">
                 <li class="nav__item"><a href="#">About</a></li>
-                <li class="nav__item"><a href="#">Education</a></li>
-                <li class="nav__item"><a href="#">Work</a></li>
+                <li class="nav__item"><a href="#">Portfolio</a></li>
+                <li class="nav__item"><a href="#">Pricing</a></li>
                 <li class="nav__item"><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <!-- Hero Section -->
+        <section class="block block--dark block--skewed-left hero">
+            <div class="container grid grid--1x2">
+                <header class="block__header hero__content">
+                    <h1 class="block__heading">Simple & Affordable Websites</h1>
+                    <p class="hero__tagline">Elegant web design solutions for
+                        small businesses in
+                        Canada.</p>
+                    <a href class="btn btn--stretched btn--accent">Get Started</a>
+                </header>
+                <picture>
+                    <!-- adding the sources -->
+                    <source type="image/webp"
+                        srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
+                    <source type="image/png"
+                        srcset="images/banner.png 1x, images/banner@2x.png 2x">
+                    <!-- using img tag to display the image -->
+                    <img class="hero__image" src="images/banner.png" alt>
+                </picture>
+            </div>
+        </section>
 
         <script src="js/main.js"></script>
     </body>
