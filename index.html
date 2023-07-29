@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,19 +17,22 @@
     </head>
     <body>
         <!-- Navigation Bar -->
-        <nav class="nav collapsible">
-            <a href="/"><img class="nav-image" src="images/ekdev-logo-white.png"
-                    alt></a>
-            <svg class="icon icon--white nav__toggler">
-                <use xlink:href="images/sprite.svg#menu"></use>
-            </svg>
-            <ul class="list nav__list collapsible__content">
-                <li class="nav__item"><a href="#">About</a></li>
-                <li class="nav__item"><a href="#">Portfolio</a></li>
-                <li class="nav__item"><a href="#">Pricing</a></li>
-                <li class="nav__item"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <header>
+            <nav class="nav collapsible">
+                <a href="/"><img class="nav-image"
+                        src="images/ekdev-logo-white.png"
+                        alt></a>
+                <svg class="icon icon--white nav__toggler">
+                    <use xlink:href="images/sprite.svg#menu"></use>
+                </svg>
+                <ul class="list nav__list collapsible__content">
+                    <li class="nav__item"><a href="#">About</a></li>
+                    <li class="nav__item"><a href="#">Portfolio</a></li>
+                    <li class="nav__item"><a href="#">Pricing</a></li>
+                    <li class="nav__item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <!-- Hero Section -->
         <section class="block block--dark block--skewed-left hero">
@@ -39,7 +42,8 @@
                     <p class="hero__tagline">Elegant web design solutions for
                         small businesses in
                         Canada.</p>
-                    <a href class="btn btn--stretched btn--accent">Get Started</a>
+                    <a href="#" class="btn btn--stretched btn--accent">Get
+                        Started</a>
                 </header>
                 <picture>
                     <!-- adding the sources -->
@@ -298,6 +302,141 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Testimonial Section -->
+        <section class="block">
+            <header class="block__header">
+                <h2>What Our Customers are Saying</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                    quidem.</p>
+            </header>
+            <div class="container">
+                <div class="card testimonial">
+                    <div class="grid grid--1x2">
+                        <div class="testimonial__image">
+                            <img src="images/mahmoud_ektefaie.jpg"
+                                alt="EKdev CEO Mahmoud Ektefaie">
+                            <span class="icon-container icon-container--accent">
+                                <svg class="icon icon--white icon--small">
+                                    <use xlink:href="images/sprite.svg#quotes"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <blockquote class="quote">
+                            <p class="quote__text">
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Maxime
+                                labore consectetur iure sed maiores veniam, sunt
+                                laudantium.
+                                Unde, similique magni?
+                            </p>
+                            <footer>
+                                <div class="media">
+                                    <div class="media__image">
+                                        <svg
+                                            class="icon icon--primary quote__line">
+                                            <use
+                                                xlink:href="images/sprite.svg#line"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="media__body">
+                                        <h3 class="media__title quote__author">John
+                                            Smith</h3>
+                                        <p class="quote__organization">
+                                            ABC Company
+                                        </p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="block block--dark footer">
+            <div class="conmtainer grid footer__sections">
+                <div></div>
+                <!-- section 1 -->
+                <section
+                    class="collapsible collapsible--expanded footer__section">
+                    <div class="collapsible__header">
+                        <h2 class="collapsible__heading footer__heading">Products</h2>
+                        <svg class="icon icon--white collapsible__chevron">
+                            <use
+                                xlink:href="images/sprite.svg#chevron2"></use>
+                        </svg>
+                    </div>
+                    <div class="collapsible__content">
+                        <ul class="list">
+                            <li><a href="#">Website Hosting</a></li>
+                            <li><a href="#">Free Wordpress</a></li>
+                            <li><a href="#">Migrations</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- section 2 -->
+                <section class="collapsible footer__section">
+                    <div class="collapsible__header">
+                        <h2 class="collapsible__heading footer__heading">Company</h2>
+                        <svg class="icon icon--white collapsible__chevron">
+                            <use
+                                xlink:href="images/sprite.svg#chevron2"></use>
+                        </svg>
+                    </div>
+                    <div class="collapsible__content">
+                        <ul class="list">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- section 3 -->
+                <section class="collapsible footer__section">
+                    <div class="collapsible__header">
+                        <h2 class="collapsible__heading footer__heading">Support</h2>
+                        <svg class="icon icon--white collapsible__chevron">
+                            <use
+                                xlink:href="images/sprite.svg#chevron2"></use>
+                        </svg>
+                    </div>
+                    <div class="collapsible__content">
+                        <ul class="list">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Knowledge Base</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- section 4 -->
+                <section class="collapsible footer__section">
+                    <div class="collapsible__header">
+                        <h2 class="collapsible__heading footer__heading">Domains</h2>
+                        <svg
+                            class="icon icon--white collapsible__chevron">
+                            <use
+                                xlink:href="images/sprite.svg#chevron2"></use>
+                        </svg>
+                    </div>
+                    <div class="collapsible__content">
+                        <ul class="list">
+                            <li><a href="#">Domain Checker</a></li>
+                            <li><a href="#">Domain Transfer</a></li>
+                            <li><a href="#">Free Domain</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Footer Brand -->
+                <div class="footer__brand">
+                    <img src="images/ekdev-logo-white.png" alt>
+                    <p class="footer__copyright">
+                        Copyright 2023 EKdev.
+                    </p>
+                </div>
+            </div>
+        </footer>
 
         <script src="js/main.js"></script>
     </body>
